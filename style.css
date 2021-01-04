@@ -1,54 +1,23 @@
-/* Lab 03
- * 040552420
- * Jordan Passant
- /
-
-/* All elements center-aligned
-   (universal selector) */
-
-* { text-align: center; }
-
-/* Form label font effects
-   (selector by attribute) */
-
-label[for="name"] { font-size: 20px; font-weight: bold; }
-label[for="dob"] { font-size: 20px; font-weight: bold; }
-label[for="email"] { font-size: 20px; font-weight: bold; }
-label[for="city"] { font-size: 20px; font-weight: bold; } 
-label[for="province"] { font-size: 20px; font-weight: bold; }
-
-/* Text-fields, date/province selects 
-   (Selector by ID)*/
-
-#name,#dob,#email,#city,#dob,#province
-{
-  display: block;  
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 20px;
-  width: 15%;  
+#topA {
+    background-image: url('imgs/leftPanel2.jpg');
+    background-repeat: repeat-x;
+    background-attachment: fixed;
+    background-size: 25% 100%; 
 }
 
-/* #Province selection given extra width
-   for symmetry
-   (ID selector)*/
-
-#province { width: 15.5%; } 
-
-/* Buttons grouped as single-line set
-   (ID selector) */
-
-#reset
-{  
-  display: inline-block;
-  margin-left: auto;  
-  margin-right: auto; 
-  width: 7.5%;
+#topB {
+    background-image: url('imgs/desk.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 60% 110%; /* cover; */
+    background-position: center; 
 }
-#submit
-{  
-  display: inline-block;
-  margin-left: auto;  
-  margin-right: auto; 
-  width: 7.5%;
+
+#topC {
+    background-image: url('imgs/rightPanel.jpg');
+    background-repeat: repeat-x;
+    background-attachment: fixed;
+    background-size: 25% 100%; 
+    color: #00a;
 }
+

@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lab 8 - PHP 2</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet2" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="js/jquery-3.4.1.slim.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+</head>
+
+<body>   
+<h1 class="jumbotron text-center">JP TN Gallery</h1>
+    <div class="container">
+        <div class="row justify-content-md-center">
+
+        <legend>Tobermory, Prince Edward County</legend>                    
+                <div class="col mb-4" id="main">
+                    <a href="Cardiff.php"><img id="mainPIC" src="imgs/Cardiff/favorite.jpg" alt="image" class="img-fluid img-thumbnail" style="width:100%;max-width:300px"></a>                
+                    <style>
+                        #main {
+                        text-align: center;
+                        }
+                    </style>
+                </div>
+                <div class="col mb-4" id="main">
+                    <?php
+                        $images = array_diff(scandir('imgs/Favorites/Cardiff/'), array('.', '..'));						
+                        $html_template = 
+                        '
+                            <!-- <div class="col-md-1 my-auto"> -->                               
+                            <img id="myImg" src="imgs/Favorites/Cardiff/<IMAGE_PATH>" alt="image" class="img-fluid img-thumbnail" style="width:25%;max-width:300px">
+                            <!-- </div> -->
+                        ';
+                        foreach($images as $image) {
+                            echo str_replace("<IMAGE_PATH>", $image, $html_template);
+                        }
+                        //for ($i = 0; $i < 8; $i++) {
+                            //echo str_replace("<IMAGE_PATH>", $images[$i], $html_template);
+                        //}
+                    ?>
+                </div>    
+
+                <hr> <!-- DIVIDER -->
+            
+        <legend>Paris</legend>                    
+                <div class="col mb-4" id="main">
+                    <a href="Cardiff.php"><img id="mainPIC" src="imgs/Cardiff/favorite.jpg" alt="image" class="img-fluid img-thumbnail" style="width:100%;max-width:300px"></a>                
+                    <style>
+                        #main {
+                        text-align: center;
+                        }
+                    </style>
+                </div>
+                <div class="col mb-4" id="main">
+                    <?php
+                        $images = array_diff(scandir('imgs/Favorites/Cardiff/'), array('.', '..'));						
+                        $html_template = 
+                        '
+                            <!-- <div class="col-md-1 my-auto"> -->                               
+                            <img id="myImg" src="imgs/Favorites/Cardiff/<IMAGE_PATH>" alt="image" class="img-fluid img-thumbnail" style="width:25%;max-width:300px">
+                            <!-- </div> -->
+                        ';
+                        foreach($images as $image) {
+                            echo str_replace("<IMAGE_PATH>", $image, $html_template);
+                        }
+                        //for ($i = 0; $i < 8; $i++) {
+                            //echo str_replace("<IMAGE_PATH>", $images[$i], $html_template);
+                        //}
+                    ?>
+                </div>    
+
+                <hr> <!-- DIVIDER -->
+                    
+                <legend>Amsterdam</legend>                    
+                <div class="col mb-4" id="main">
+                    <a href="Cardiff.php"><img id="mainPIC" src="imgs/Cardiff/favorite.jpg" alt="image" class="img-fluid img-thumbnail" style="width:100%;max-width:300px"></a>                
+                    <style>
+                        #main {
+                        text-align: center;
+                        }
+                    </style>
+                </div>
+                <div class="col mb-4" id="main">
+                    <?php
+                        $images = array_diff(scandir('imgs/Favorites/Cardiff/'), array('.', '..'));						
+                        $html_template = 
+                        '
+                            <!-- <div class="col-md-1 my-auto"> -->                               
+                            <img id="myImg" src="imgs/Favorites/Cardiff/<IMAGE_PATH>" alt="image" class="img-fluid img-thumbnail" style="width:25%;max-width:300px">
+                            <!-- </div> -->
+                        ';
+                        foreach($images as $image) {
+                            echo str_replace("<IMAGE_PATH>", $image, $html_template);
+                        }
+                        //for ($i = 0; $i < 8; $i++) {
+                            //echo str_replace("<IMAGE_PATH>", $images[$i], $html_template);
+                        //}
+                    ?>
+                </div>    
+
+                <hr> <!-- DIVIDER -->
+               
+                <legend>London</legend>                    
+                <div class="col mb-4" id="main">
+                    <a href="Cardiff.php"><img id="mainPIC" src="imgs/Cardiff/favorite.jpg" alt="image" class="img-fluid img-thumbnail" style="width:100%;max-width:300px"></a>                
+                    <style>
+                        #main {
+                        text-align: center;
+                        }
+                    </style>
+                </div>
+                <div class="col mb-4" id="main">
+                    <?php
+                        $images = array_diff(scandir('imgs/Favorites/Cardiff/'), array('.', '..'));						
+                        $html_template = 
+                        '
+                            <!-- <div class="col-md-1 my-auto"> -->                               
+                            <img id="myImg" src="imgs/Favorites/Cardiff/<IMAGE_PATH>" alt="image" class="img-fluid img-thumbnail" style="width:25%;max-width:300px">
+                            <!-- </div> -->
+                        ';
+                        foreach($images as $image) {
+                            echo str_replace("<IMAGE_PATH>", $image, $html_template);
+                        }
+                        //for ($i = 0; $i < 8; $i++) {
+                            //echo str_replace("<IMAGE_PATH>", $images[$i], $html_template);
+                        //}
+                    ?>
+                </div>
+
+                <hr> <!-- DIVIDER -->
+               
+                <legend>Cardiff</legend>                    
+                <div class="col mb-4" id="main">
+                    <a href="Vegas.php"><img id="mainPIC" src="imgs/Cardiff/favorite.jpg" alt="image" class="img-fluid img-thumbnail" style="width:100%;max-width:300px"></a>                
+                    <style>
+                        #main {
+                        text-align: center;
+                        }
+                    </style>
+                </div>
+                <div class="col mb-4" id="main">
+                    <?php
+                        $images = array_diff(scandir('imgs/Favorites/LasVegas/'), array('.', '..'));						
+                        $html_template = 
+                        '
+                            <!-- <div class="col-md-1 my-auto"> -->                               
+                            <img id="myImg" src="imgs/Favorites/LasVegas/<IMAGE_PATH>" alt="image" class="img-fluid img-thumbnail" style="width:25%;max-width:300px">
+                            <!-- </div> -->
+                        ';
+                        foreach($images as $image) {
+                            echo str_replace("<IMAGE_PATH>", $image, $html_template);
+                        }
+                        //for ($i = 0; $i < 8; $i++) {
+                            //echo str_replace("<IMAGE_PATH>", $images[$i], $html_template);
+                        //}
+                    ?>
+                </div>
+
+                <hr> <!-- DIVIDER -->
+               
+                <legend>Las Vegas</legend>                    
+                <div class="col mb-4" id="main">
+                    <a href="Vegas.php"><img id="mainPIC" src="imgs/Cardiff/favorite.jpg" alt="image" class="img-fluid img-thumbnail" style="width:100%;max-width:300px"></a>                
+                    <style>
+                        #main {
+                        text-align: center;
+                        }
+                    </style>
+                </div>
+                <div class="col mb-4" id="main">
+                    <?php
+                        $images = array_diff(scandir('imgs/Favorites/LasVegas/'), array('.', '..'));						
+                        $html_template = 
+                        '
+                            <!-- <div class="col-md-1 my-auto"> -->                               
+                            <img id="myImg" src="imgs/Favorites/LasVegas/<IMAGE_PATH>" alt="image" class="img-fluid img-thumbnail" style="width:25%;max-width:300px">
+                            <!-- </div> -->
+                        ';
+                        foreach($images as $image) {
+                            echo str_replace("<IMAGE_PATH>", $image, $html_template);
+                        }
+                        //for ($i = 0; $i < 8; $i++) {
+                            //echo str_replace("<IMAGE_PATH>", $images[$i], $html_template);
+                        //}
+                    ?>
+                </div>
+
+                <hr>
+
+                <legend>Bonus: Logan</legend>
+                <div class="col mb-4" id="main">
+                    <a href="Logan.php"><img id="mainPIC" src="imgs/Favorites/Logan/favorite.jpg" alt="image" class="img-fluid img-thumbnail" style="width:100%;max-width:300px"></a>                
+                    <style>
+                        #main {
+                        text-align: center;
+                        }
+                    </style>
+                </div>
+                <div class="col mb-4" id="main">
+                    <?php
+                        $images = array_diff(scandir('imgs/Favorites/Logan/'), array('.', '..'));						
+                        $html_template = 
+                        '
+                            <!-- <div class="col-md-1 my-auto"> -->                               
+                            <img id="myImg" src="imgs/Favorites/Logan/<IMAGE_PATH>" alt="image" class="img-fluid img-thumbnail" style="width:25%;max-width:300px">
+                            <!-- </div> -->
+                        ';
+                        foreach($images as $image) {
+                            echo str_replace("<IMAGE_PATH>", $image, $html_template);
+                        }
+                        //for ($i = 0; $i < 8; $i++) {
+                            //echo str_replace("<IMAGE_PATH>", $images[$i], $html_template);
+                        //}
+                    ?>
+                </div>
+
+            </div>            
+        </div>      
+</body>
+</html>

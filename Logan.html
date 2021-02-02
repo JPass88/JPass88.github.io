@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JPTNG-Vegas</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="js/jquery-3.4.1.slim.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+</head>
+
+<body>   
+
+    <div class="container">
+        <div class="row justify-content-md-center">
+            <div class="row">
+                <h1 class="jumbotron text-center">JP TN Gallery</h1>
+                    
+                <legend>Logan</legend>                    
+                <!-- <div class="col sm-9"> -->
+                <div class="row mb-3">
+                <!-- <div class="row mb-9"> -->
+                    <?php
+                        $images = array_diff(scandir('imgs/Logan/'), array('.', '..'));						
+                        $html_template = 
+                        '
+                            <div class="row-md-9 my-auto">                                
+                            <img id="myImg" src="imgs/Logan/<IMAGE_PATH>" alt="image" class="img-fluid img-thumbnail" style="width:100%;max-width:300px">
+                            </div>
+                        ';
+                        foreach($images as $image) {
+                            echo str_replace("<IMAGE_PATH>", $image, $html_template);
+                        }
+                    ?>
+                </div>              
+                
+
+            </div>            
+        </div>       
+</body>
+</html>
